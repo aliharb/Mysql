@@ -13,9 +13,6 @@ INSERT INTO departments value('g2',"Sales");
 INSERT INTO departments value('g3',"Administartion");
 INSERT INTO departments value('g4',"Operations");
 
-
-select * from departments;
-
 -- create employees table 
 CREATE TABLE IF NOT EXISTS employees(
 employee_id int NOT NULL,
@@ -34,7 +31,6 @@ INSERT INTO employees value(126,'g3','Saulat',null);
 INSERT INTO employees value(127,'g2','Cheong','Woo');
 INSERT INTO employees value(128,null,'Heidy',null);
 
-select * from employees;
 
 -- create facilities table
 CREATE TABLE IF NOT EXISTS facilities(
@@ -47,7 +43,6 @@ INSERT INTO facilities value("102");
 INSERT INTO facilities value("AA");
 INSERT INTO facilities value("AB");
 
-SELECT * FROM facilities;
 
 -- create junction table 
 CREATE TABLE IF NOT EXISTS Key_card(
@@ -64,8 +59,11 @@ INSERT INTO key_card value("102",'g1');
 INSERT INTO key_card value("102",'g2');
 INSERT INTO key_card value("AA",'g2');
 
-SELECT * FROM key_card;
 
+select * from departments;
+select * from employees;
+SELECT * FROM facilities;
+SELECT * FROM key_card;
 
 -- Q1
 SELECT employee_id, first_name, last_name, departments.dept_id, dept_title FROM employees
