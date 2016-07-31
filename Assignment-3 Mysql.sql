@@ -60,8 +60,8 @@ INSERT INTO key_card value("102",'g2');
 INSERT INTO key_card value("AA",'g2');
 
 
-select * from departments;
-select * from employees;
+SELECT * FROM departments;
+SELECT * FROM employees;
 SELECT * FROM facilities;
 SELECT * FROM key_card;
 
